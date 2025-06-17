@@ -1,0 +1,173 @@
+/* File: Sidedashboard.css or dashboard.css */
+.dashboard-layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fa;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.template {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.template:hover {
+  transform: translateY(-2px);
+  border: 1px solid #007bff;
+  background-color: #eef5ff;
+}
+
+.btn-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-link:hover {
+  color: #007bff;
+}
+
+.dashboard-content {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* File: Detail.css */
+.detail-form {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 12px;
+ 
+}
+
+.detail-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.detail-subtitle {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.1rem;
+  color: #5d6d7e;
+}
+
+.detail-note {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.detail-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #34495e;
+}
+
+.req {
+  color: red;
+  margin-left: 3px;
+}
+
+.detail-fields input[type="text"],
+.detail-fields input[type="email"],
+.detail-fields input[type="date"],
+.detail-fields input[type="tel"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+#name {
+  border: 1.5px solid #007bff;
+  background-color: #f0f7ff;
+  color: #004080;
+  font-weight: 500;
+}
+
+.detail-fields input:focus {
+  border-color: #007bff;
+  background-color: #eef5ff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.detail-btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #007bff, #005fcc);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.detail-btn:hover {
+  background-color: #004aa3;
+  transform: translateY(-1px);
+}

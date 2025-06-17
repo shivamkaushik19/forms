@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statement-form {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  max-height: 95vh;
+  overflow: hidden;
+}
+
+/* Title and note */
+.statement-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.statement-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Scrollable inner field section */
+.statement-fields {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Group and labels */
+.statement-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.statement-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.req {
+  color: red;
+  margin-left: 4px;
+}
+
+/* Input styles */
+.statement-input {
+  font-size: 0.95rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 120px;
+  max-height: 200px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.statement-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* Submit button section */
+.statement-button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.statement-btn {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.statement-btn:hover {
+  background-color: #005fcc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  html, body {
+    padding: 1rem;
+    align-items: flex-start; /* Align to top for scroll on small screens */
+  }
+
+  .statement-form {
+    padding: 1.5rem 1rem;
+    max-height: none;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .statement-btn {
+    width: 100%;
+  }
+}

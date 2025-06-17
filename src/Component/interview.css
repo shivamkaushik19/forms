@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+.interview-form {
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.interview-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.interview-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.interview-fields {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem 2rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.interview-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.interview-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.req {
+  color: red;
+  margin-left: 4px;
+}
+
+.interview-input {
+  font-size: 0.95rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  min-width: 0;
+}
+
+.interview-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.interview-button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+.interview-btn {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.interview-btn:hover {
+  background-color: #005fcc;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .interview-form {
+    padding: 1rem;
+  }
+
+  .interview-btn {
+    width: 100%;
+  }
+
+  .interview-fields {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+}
